@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="custom.css">
+  <meta name="theme-color" content="#95c0ff">
+  <title>Site de Testes</title>
+</head>
+<body>
+<header id="start">
+  <h1>Site de Testes</h1>
+  <hr>
+  <h1>Daniel Silvestre</h1>
+</header>
+<nav>
+    <a href="#tabela">Tabela</a>
+    <a href="#audio">Audios</a>
+    <a href="#listas">Listas/Downloads</a>
+    <a href="#imagem">Imagem</a>
+    <a href="#videos">Videos</a>
+    <a href="#iframes">Iframes</a>
+</nav>
+<main>
+  <section id="tabela">
+  <h1>Teste com Tabelas</h1>
+    <table>
+    <caption>Tabela Simples</caption>
+      <thead>
+        <tr>
+          <th scope="col">1</th>
+          <th scope="col">2</th>
+          <th scope="col">3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+        </tr>
+        <tr>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+        </tr>
+        </tbody>
+     </table>
+  </section>
+  <section id="audio">
+  <h1>Teste com Audios</h1>
+  <p>Estrelar ↻ ◁ || ▷ ↺</p>
+    <audio controls src="Audios/Estrelar-MarcosValle.mp3"></audio>
+  <p>GuanaCast ↻ ◁ || ▷ ↺</p>
+    <audio controls src="Audios/guanacast-33.mp3"></audio>
+  </section>
+  <section id="listas"> 
+  <h1>Testes com Listas</h1>
+  <p>Listas com Downloads</p>
+    <ul>
+      <li><a href="Arquivos/Duolingo_Super - v6.32.6_Tekmods.com.7z">Download Duolingo Apk</a></li>
+      <li><a href="Mimo v6.3 (Pro) (Use Xapks installer).7z">Download Mimo Apk</a></li>
+      <li><a href="ZArchiver_Pro- v1.0.10.7z">Download Zarchiver Apk</a></li>
+    </ul>
+  </section>
+  <section id="imagem">
+  <h1>Teste com Imagens</h1>
+  <p>Com IMG</p>
+    <img src="Fotos/logo-js.png" alt="Icone do Java Script" width="120" height="120">
+  <p>Com Picture</p>
+    <picture>
+      <source media="(min-width: 1430px)" srcset="Fotos/img-g.png" type="image/png">
+      <source media="(min-width: 1000px)" srcset="Fotos/img-m.png" type="image/png">
+      <img class="imgp" src="Fotos/img-p.png" alt="Imagens Responsivas">
+    </picture>
+  </section>
+  <section id="videos">
+  <h1>Teste com Videos</h1>
+  <h2>Video do Youtube</h2>
+    <iframe width="100%" height="185vh" src="https://www.youtube.com/embed/zgz0AKFjkNI?si=ooRFXu5rtkjH4FzW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+  <h2>Video do Vimeo</h2>
+    <aside style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1007405829?h=27f6bdb58d" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></aside><script src="https://player.vimeo.com/api/player.js"></script>
+  <br>
+  <br>
+  <h2>Video Local</h2>
+    <video poster="Fotos/thumb.png" controls src="Videos/landscape.mp4" type="video/mp4" width="100%" height="100%"></video>
+  </section>
+  <br>
+  <section id="iframes">
+  <h1>Testes com Iframes</h1>
+  <p>Site curso em video Gustavo Guanabara</p>
+    <iframe src="https://www.cursoemvideo.com" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer">Site do <a href="https://www.cursoemvideo.com">Curso em Video</a></iframe>
+  <h2>Teste com Aparencias de iframes</h2>
+    <iframe name="frame" src="iframe/index4.html" frameborder="0"></iframe>
+  <p>Iframe com Index.html</p>
+  <a class="iframebt" href="iframe/index4.html" target="frame">Iframe Pg1</a>
+  <a class="iframebt" href="iframe/index3.html" target="frame">Iframe Pg2</a>
+  </section>
+</main>
+<nav>
+  <a class="goup" href="#start">^</a>
+  <a class="gonext" href="index2.html">></a>
+</nav>
+<footer>
+  <p>Site de Testes <a href="https://github.com/danielsilvestre2" target="_blank">Daniel Silvestre</a> Todos os Direitos Reservados © 2025</p>
+</footer>
+</body>
+</html>

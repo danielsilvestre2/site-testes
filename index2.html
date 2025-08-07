@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="custom2.css">
+  <title>Document</title>
+</head>
+<body>
+<header id="start">
+  <h1>Site de Testes</h1>
+  <hr>
+  <h2>Daniel Silvestre</h2>
+</header>
+<nav> <!-- Menu de Navegação entre sections -->
+    <a href="#gradient">Gradients</a>
+    <a href="#botoes">Botões</a>
+    <a href="#fontes">Fontes</a>
+    <a href="#form">Inputs</a>
+    <a href="#videos">Videos</a>
+    <a href="#iframes">Iframes</a>
+</nav>
+<main>
+     <!-- Gradients -->
+    <section id="gradient">
+      <h1>Testes com Gradients</h1>
+      <p>Gradiente Linear</p>
+        <div class="grad">•</div>
+      <p>Gradiente Radial</p>
+        <div class="grad2">•</div>
+    </section>
+    <!-- Botões -->
+    <section id="botoes">
+      <h1>Teste com Botoes</h1>
+       <p>Botoes em Listas</p>
+      <ul>
+        <li><button>A</button></li>
+        <li><button>B</button></li>
+        <li><button>C</button></li>
+      </ul>
+    </section>
+    <!-- Fontes -->
+    <section id="fontes">
+      <h1>Testes com Fontes</h1>
+      <p class="font1">HandWritting</p>
+      <p class="font2">Rick and Morty</p>
+      <p class="font3">Jojo</p>
+    </section>
+    <!-- Inputs -->
+    <section id="form">
+    <h1>Teste com Inputs</h1>
+    <form method="post" action="sigin.php">
+    <fieldset>
+    <!-- Inputs -->
+    <legend>Formulario</legend>
+    <p>
+    <label for="name">Nome: <br></label><input  required type="text" name="nome" id="name" placeholder="Inserir Nome">
+    </p>
+    <p>
+    <label for="pass">Senha: <br></label><input  required type="password" name="senha" id="pass" placeholder="Inserir Senha" minlength="8">
+    </p>
+    <p>
+    <input id="btcnt" type="submit" value="Cadastre-se">
+    </p>
+    </fieldset>
+    </form>
+    <h1>Outros Valores de Inputs</h1>
+    <form action="sigin.php" method="post">
+    <p>
+    <label for="data">Data: <br></label><input type="date" name="data" id="date" placeholder="DD/MM/AAAA">
+    </p> 
+    <p>
+    <label for="time">Hora: <br></label><input type="time" name="hora" id="time">
+    </p>
+    <p>
+    <label for="month">Mês: <br></label><input type="month" name="mes" id="month">
+    </p>
+    <p>
+    <label for="numb">Média: <br></label><input type="number" name="media" id="numb" required step="0.5" max="10" placeholder="0 a 10">
+    <p>
+    <input type="submit" value="Enviar"></p>
+    </p>
+    </form>
+    <form autocomplete="on" method="post" action="sigin.php">
+    <fieldset>
+    <legend>Telefone e Email</legend>
+    <p>
+    <label for="phone">Telefone: <br></label>
+    <input required type="tel" name="tel" id="phone" pattern="\(\d{2}\)\s?(\d{4,5})-?(\d{4})">
+    </p>
+    <p>
+    <label for="email">Email: <br></label>
+    <input required type="email" name="email" id="email">
+    </p>
+    <p>
+    <input type="submit" value="Enviar">
+    </p>
+    </fieldset>
+    </form>
+  </section>
+</main>
+<nav>  <!-- Menu de Navegação entre indexs -->
+  <a class="goup" href="#start">^</a>
+  <a class="gonext" href="index.html"><</a>
+</nav>
+    <!-- Rodape -->
+<footer>
+  <p>Site de Testes <a href="https://github.com/danielsilvestre2"
+  target="_blank">Daniel Silvestre</a> Todos os Direitos Reservados © 2025</p>
+</footer>
+</body>
+</html>

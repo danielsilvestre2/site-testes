@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Hand';
+	src: url('fonts/autography.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ReM';
+	src: url('fonts/rick.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Jojom';
+	src: url('fonts/jojomix.ttf') format('truetype');
+}
+
+
+  /* Conteudo Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, helvetica, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+h1, h2, h3, p {
+  padding: 20px;
+}
+hr {
+  border: 1px solid white;
+  width: 70px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+p {
+  font: normal normal 1em arial, helvetica, sans-serif;
+}
+body {
+  position: relative;
+  background-color: #efefef;
+}
+  /* Cabecalho */
+header h1, h2 {
+  padding: 20px;
+  font: normal bold 2em;
+  text-align: center;
+}
+header {
+  margin: 0 0 -32px 0;
+  background-image: linear-gradient(to bottom, #9300fd, #0033d3);
+  color: white;
+}
+  /* Navegação */
+nav {
+  padding: 20px;
+  margin: 20px;
+  border: 0px solid black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #0000002a;
+  background-color: #b9c0ff;
+}
+nav a {
+  font: normal bold 1em arial, helvetica, sans-serif;
+  display: inline-block;
+  margin: 2px;
+  text-decoration: none;
+  padding: 10px;
+  border: 0px solid #0033d3;
+  background-color: #0033d3;
+  color: white;
+  border-radius: 10px;
+}
+  /* conteudo Principal */
+  /* Inputs */
+fieldset {
+  border-radius: 10px;
+}
+fieldset legend {
+  margin: 0 0 0 10px;
+  padding: 10px;
+}
+#form p {
+  font: normal normal .9em arial, helvetica, sans-serif;
+  padding: 20px;
+}
+#form input {
+  width: 200px;
+  padding: 4px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+  /* Fontes */
+.font1 {
+  font-family: 'Hand';
+  color: #7f009e;
+  font-size: 30px;
+}
+.font2 {
+  font-family: 'ReM';
+  color: #32ffe6;
+  font-size: 30px;
+}
+.font3 {
+  font-family: 'Jojom';
+  font-size: 30px;
+}
+  /* Botoes */
+#btcnt {
+  margin: auto;
+}
+section button {
+  width: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+}
+section button:hover {
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  color: gray;jI
+  transition-duration: .2s;
+}
+  /* Listas */
+ul {
+  margin: 0 0 20px 20px;
+  font: normal normal 1.1em arial, helvetica, sans-serif;
+  line-height: 55px;
+}
+  /* Gradients */
+.grad {
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(to top, #0eff97, #24ff12);
+  back
+  width: 320px;
+  height: 230px;
+  font: normal bold 1em arial, helvetica, sans-serif;
+}
+.grad2 {
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-image: radial-gradient(circle, #ffc712, #ff9912);
+  width: 320px;
+  height: 230px;
+  font: normal bold 1em arial, helvetica, sans-serif;
+}
+  /* Seções */
+section, div, nav {
+  padding: 20px;
+  margin: 20px;
+  border: 0px solid black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #0000002a;
+  background-color: white;
+}
+  /* Rodape */
+footer {
+  height: 100px;
+  background-color: #0033d3;
+  color: white;
+}
+footer p {
+  padding: 30px 0 0 0;
+  text-align: center;
+  font: normal normal 1.1em arial, helvetica, sans-serif;
+}
+footer a {
+	text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+  /* Alternat Links */
+.gonext {
+  color: gray;
+  padding: 6px;
+  position: absolute;
+  left: 7%;
+  border: 2px solid lightgray;
+  width: 48px;
+  height: 48px;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+.gonext:hover {
+  transition-duration: .2s;
+  border: 2px solid gray;
+  background-color: gray;
+  color: white;
+}
+.goup {
+  position: sticky;
+  bottom: 4%;
+  left: 80%;
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font: normal bold 2.3em Arial, helvetica, sans-serif;
+  text-decoration: none;
+  border: 2px solid #7d8afe;
+  background-color: #7d8afe;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+}

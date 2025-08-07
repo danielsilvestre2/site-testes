@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+  /* Conteudo Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, helvetica, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+h1, h2, h3, p {
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  border: 1px solid white;
+  width: 70px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+p {
+  font: normal normal 1em arial, helvetica, sans-serif;
+}
+body {
+  position: relative;
+  background-color: #efefef;
+}
+  /* Cabecalho */
+header h1, h2 {
+  padding: 20px;
+  font: normal bold 2em;
+  text-align: center;
+}
+header {
+  margin: 0 0 -32px 0;
+  background-image: linear-gradient(to bottom, #9300fd, #0033d3);
+  color: white;
+}
+  /* Navegação */
+nav {
+  padding: 20px;
+  margin: 20px;
+  border: 0px solid black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #0000002a;
+  background-color: #b9c0ff;
+}
+nav a {
+  font: normal bold 1em arial, helvetica, sans-serif;
+  display: inline-block;
+  margin: 2px;
+  text-decoration: none;
+  padding: 10px;
+  border: 0px solid #0033d3;
+  background-color: #0033d3;
+  color: white;
+  border-radius: 10px;
+}
+  /* Conteudo Principal */
+
+  /* Imagens */
+img {
+  border-radius: 20px;
+  margin: 20px auto 20px auto;
+  height: 250;
+  width: 129;
+  justify-content: center;
+  display: flex;
+}
+  /* Seções */
+section, div, nav {
+  padding: 20px;
+  margin: 20px;
+  border: 0px solid black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #0000002a;
+  background-color: white;
+}
+.iframebt {
+  font: normal bold 1em arial, helvetica, sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #0033d3;
+  background-color: #0033d3;
+  color: white;
+  border-radius: 10px;
+  gap: 1em;
+}
+section h1 {
+  font: normal bold 2em arial, sans-serif;
+}
+#iframes p {
+  font: normal normal 1em arial, helvetica, sans-serif;
+}
+  /* Listas com downloads */
+ul {
+  margin: 0 0 20px 20px;
+  font: normal normal 1.1em arial, helvetica, sans-serif;
+  line-height: 55px;
+}
+ul a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+ul a:hover {
+  text-decoration: underline;
+}
+li a::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('Fotos/download.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+  /* Videos e Iframes */
+video, iframe {
+  margin: 20px auto 20px auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+  /* Audios */
+audio {
+  margin: 20px;
+}
+  /* Tabela */
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+caption {
+  font: normal bold 1.5em Arial, helvetica, sans-serif;
+  padding: 5px;
+  background-color: #dddbff;
+  border-radius: 10px 10px 0 0;
+}
+table td, th {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  border: 1px solid black;
+}
+th {
+  background-color: #350096;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+  /* Rodape */
+footer {
+  height: 100px;
+  background-color: #0033d3;
+  color: white;
+}
+footer p {
+  padding: 30px 0 0 0;
+  text-align: center;
+  font: normal normal 1.1em arial, helvetica, sans-serif;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+body {
+  position: relative;
+}
+  /* Alternar links */
+.gonext {
+  padding: 4px;
+  position: absolute;
+  left: 7%;
+  border: 2px solid lightgray;
+  width: 48px;
+  color: gray;
+  height: 48px;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+.gonext:hover {
+  transition-duration: .2s;
+  border: 2px solid gray;
+  background-color: gray;
+  color: white;
+}
+.goup {
+  position: sticky;
+  bottom: 4%;
+  left: 80%;
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font: normal bold 2.3em Arial, helvetica, sans-serif;
+  text-decoration: none;
+  border: 2px solid #7d8afe;
+  background-color: #7d8afe;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
