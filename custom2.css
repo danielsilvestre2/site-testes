@@ -96,16 +96,16 @@ fieldset legend {
 .font1 {
   font-family: 'Hand';
   color: #7f009e;
-  font-size: 30px;
+  font-size: 200%;
 }
 .font2 {
   font-family: 'ReM';
   color: #32ffe6;
-  font-size: 30px;
+  font-size: 200%;
 }
 .font3 {
   font-family: 'Jojom';
-  font-size: 30px;
+  font-size: 200%;
 }
   /* Botoes */
 #btcnt {
