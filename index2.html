@@ -81,14 +81,11 @@
     </p>
     <p>
     <label for="numb">De 0 a 10,<u> como esta o
-    site?</u> <br><br></u><input type="number"
-    name="media" id="numb" required step="0.5"
-    max="10" placeholder="0 a 10">
+    site?</u> <br><br></u><input type="number" name="media" id="numb" required step="0.5" max="10" placeholder="0 a 10">
     <p>
     <p>
     <label for="rang">Seu <u>Nivel de Satisfação</u> <br><br>
-    </u><input min="0" max="200" type="range"
-    name="range" id="rang" value="0">
+    </u><input min="0" max="200" type="range" name="range" id="rang" value="0">
     </p>
     <p>
       <label for="color">Agora <u>Escolhe uma Cor </u>&#x1F603 <br><br>
@@ -97,9 +94,6 @@
     <p>
       <label for="file">Add <u>File</u> <br><br>
       </u><input type="file" name="file" id="file">
-    </p>
-    <p>
-    <input type="submit" value="Enviar">
     </p>
     <p>
       <label for="sel"><u>Qual a seu
@@ -115,37 +109,34 @@
     </p>
     <br> <br>
     <p>
-    <label for="mat">Qual a sua Materia escolar Favorita?</label><input type="text" name="subject" id="mat">  
-    <datalist>
-      <optgroup label="Ciencias Humanas">
-      <option value="Portugues"></option>
-      <option value="Literatura"></option>
-      <option value="Historia"></option>
-      <option value="Filosofia"></option>
-      <option value="Sociologia"></option>
-      <option value="Geografia"></option>
-      </optgroup>
-      <optgroup label="Ciencias Exatas">
-      <option value="Ciencias"></option>
-      <option value="Matematica"></option>
-      <option value="Quimica"></option>
-      <option value="Fisica"></option>
-      <option value="Biologia"></option>
-      <option value=""></option>
+    <label for="mat">Qual a sua Materia escolar Favorita?</label><input type="text" name="subject" id="mat" list="lstmat"><br>
+    <datalist id="lstmat">
+      <option selected value="--Materias--"></option>
+      <option value="Portuges">Ciências Humanas</option>
+      <option value="Literatura">Ciências Humanas</option>
+      <option value="Historia">Ciências Humanas</option>
+      <option value="Filosofia">Ciências Humanas</option>
+      <option value="Sociologia">Ciências Humanas</option>
+      <option value="Geografia">Ciências Humanas</option>
+      <option value="Ciencia">Ciências Exatas</option>
+      <option value="Matematica">Ciências Exatas</option>
+      <option value="Quimica">Ciências Exatas</option>
+      <option value="Fisica">Ciências Exatas</option>
+      <option value="Biologia">Ciências Exatas</option>
     </datalist>
     </p>
-    
-    
-    
+    <p class="cntxt">
+      <label for="fdbk">Como Posso melhorar?</label> <br>
+      <textarea name="feedback" id="fdbk" cols="30" rows="10" placeholder=" Insira aqui.. "></textarea>
+    </p>
     <fieldset class="none">
       <legend>Checkbox and Radio</legend>
       <p>
-      <span>Sexo: </span> <br>
+      <span>Sexo: </span><br>
       <input checked type="radio" name="sexo" id="mas"><label for="mas">Masculino</label>
       <br>
       <input type="radio" name="sexo"
-      id="fem"><label for="fem">Feminino</label>
-      <br>
+      id="fem"><label for="fem">Feminino</label><br>
       <label for="check">Linguagens Utilizadas </label> <br>
       <input checked type="checkbox" name="checkbox" id="check">HTML
       <input checked type="checkbox" name="checkbox" id="check">CSS
@@ -158,7 +149,7 @@
     <legend>Telefone e Email</legend>
     <p>
     <label for="phone">Telefone: <br></label>
-    <input placeholder="(21) 99999-9999" required type="tel" name="tel" id="phone" pattern="\(\d{2}\)\s?(\d{4,5})-?(\d{4})">
+    <input placeholder="(21) 98765-4321" required type="tel" name="tel" id="phone" pattern="\(\d{2}\)\s?(\d{4,5})-?(\d{4})">
     </p>
     <p>
     <label for="email">Email: <br></label>
@@ -169,6 +160,10 @@
     </pre>
     </fieldset>
     </form>
+    
+    <p>
+    <input type="submit" value="Enviar">
+    </p>
   </section>
 </main>
 <nav>  <!-- Menu de Navegação entre indexs -->

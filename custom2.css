@@ -106,6 +106,22 @@ fieldset legend {
   border: 1px solid gray;
   border-radius: 6px;
 }
+.cntxt label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+textarea {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
   /* Fontes */
 .font1 {
   font-family: 'Hand';
