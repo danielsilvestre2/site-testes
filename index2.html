@@ -71,47 +71,82 @@
     <h1>Outros Valores de Inputs</h1>
     <form action="sigin.php" method="post">
     <p>
-    <label for="data">Select <u>Date</u> <br></br><input type="date" name="data" id="date" placeholder="DD/MM/AAAA">
+    <label for="data">Qual a <u>Data?</u> <br></br><input type="date" name="data" id="date" placeholder="DD/MM/AAAA">
     </p> 
     <p>
-    <label for="time">Select <u>Time</u> <br><br></br><input type="time" name="hora" id="time">
+    <label for="time">Qual a <u>Hora?</u> <br><br></br><input type="time" name="hora" id="time">
     </p>
     <p>
-    <label for="month">Select <u>Month</u> <br><br></br><input type="month" name="mes" id="month">
+    <label for="month">Qual o <u>Mes?</u> <br><br></br><input type="month" name="mes" id="month">
     </p>
     <p>
-    <label for="numb">Chose a <u>Number</u> <br><br></label><input type="number" name="media" id="numb" required step="0.5" max="10" placeholder="0 a 10">
+    <label for="numb">De 0 a 10,<u> como esta o
+    site?</u> <br><br></u><input type="number"
+    name="media" id="numb" required step="0.5"
+    max="10" placeholder="0 a 10">
     <p>
     <p>
-    <label for="rang">Select <u>Range</u> <br><br>
-    </u><input min="1" max="200" type="range" name="range" id="rang">
+    <label for="rang">Seu <u>Nivel de Satisfação</u> <br><br>
+    </u><input min="0" max="200" type="range"
+    name="range" id="rang" value="0">
     </p>
     <p>
-      <label for="color">Chose <u>Color</u> <br><br>
+      <label for="color">Agora <u>Escolhe uma Cor </u>&#x1F603 <br><br>
       </label><input value="#4300ed" type="color" name="color" id="color">
     </p>
     <p>
       <label for="file">Add <u>File</u> <br><br>
-      </label><input type="file" name="file" id="file">
+      </u><input type="file" name="file" id="file">
     </p>
     <p>
     <input type="submit" value="Enviar">
     </p>
     <p>
-      <label for=""></label><input type="">
+      <label for="sel"><u>Qual a seu
+      Estado?</u></label>
+      <select name="select" id="sel">
+        <option value="SP">São Paulo</option>
+        <option value="AC">Acre</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PR">Parana</option>
+        <option value="CE">Ceará</option>
+        <option value="RJ">Rio de Janeiro</option>
+      </select>
     </p>
+    <br> <br>
+    <p>
+    <label for="mat">Qual a sua Materia escolar Favorita?</label><input type="text" name="subject" id="mat">  
+    <datalist>
+      <optgroup label="Ciencias Humanas">
+      <option value="Portugues"></option>
+      <option value="Literatura"></option>
+      <option value="Historia"></option>
+      <option value="Filosofia"></option>
+      <option value="Sociologia"></option>
+      <option value="Geografia"></option>
+      </optgroup>
+      <optgroup label="Ciencias Exatas">
+      <option value="Ciencias"></option>
+      <option value="Matematica"></option>
+      <option value="Quimica"></option>
+      <option value="Fisica"></option>
+      <option value="Biologia"></option>
+      <option value=""></option>
+    </datalist>
+    </p>
+    
     
     
     <fieldset class="none">
       <legend>Checkbox and Radio</legend>
       <p>
-      <span>Sex: </span> <br>
+      <span>Sexo: </span> <br>
       <input checked type="radio" name="sexo" id="mas"><label for="mas">Masculino</label>
       <br>
       <input type="radio" name="sexo"
       id="fem"><label for="fem">Feminino</label>
       <br>
-      <label for="check">Chose: </label> <br>
+      <label for="check">Linguagens Utilizadas </label> <br>
       <input checked type="checkbox" name="checkbox" id="check">HTML
       <input checked type="checkbox" name="checkbox" id="check">CSS
       <input type="checkbox" name="checkbox" id="check">JAVASCRIPT
