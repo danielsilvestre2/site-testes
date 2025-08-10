@@ -129,6 +129,9 @@ video, iframe {
   align-items: center;
   border-radius: 20px;
 }
+aside {
+  margin: 0 0 20px 0;
+}
   /* Audios */
 audio {
   margin: 20px;
@@ -245,6 +248,7 @@ body {
   section#listas {
     list-style-position: inside;
     padding: 10px;
+    font-size: 12px;
     text-align: right;
     margin: -465px 0 0 63.7%;
     width: 35%;
