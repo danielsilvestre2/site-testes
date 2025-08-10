@@ -173,9 +173,8 @@ ul {
   padding: 10px;
   border: 1px solid transparent;
   background-image: linear-gradient(to top, #0eff97, #24ff12);
-  back
-  width: 320px;
-  height: 230px;
+  width: 80%;
+  height: 20vh;
   font: normal bold 1em arial, helvetica, sans-serif;
 }
 .grad2 {
@@ -188,8 +187,8 @@ ul {
   padding: 10px;
   border: 1px solid transparent;
   background-image: radial-gradient(circle, #ffc712, #ff9912);
-  width: 320px;
-  height: 230px;
+  width: 80%;
+  height: 20vh;
   font: normal bold 1em arial, helvetica, sans-serif;
 }
   /* Seções */
@@ -253,4 +252,40 @@ footer a {
   color: white;
   padding: 12px;
   border-radius: 50%;
+}
+@media screen and (min-width: 320px) {
+  #file, #fdbk, form {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 889px) {
+  header {
+    margin: 0 0 20px 0;
+  }
+  nav {
+    display: none;
+  }
+  #botoes {
+    width: 45.8%;
+  }
+  #fontes {
+    margin: -335px 0 -20px 48.9%;
+    width: 49.8%;
+  }
+  #form {
+    height: 20vh;
+    width: 45.8%;
+    margin: 40px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
+  }
+  #form2 {
+    height: 70%;
+    width: 49.8%;
+    margin: -450px 0 0 48.9%;
+  }
+  #form3 {
+    width: 45.8%;
+    margin: -650px 725px 0 20px;
+    padding: 80px 20px -10px 20px;
+  }
 }
