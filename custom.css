@@ -214,3 +214,43 @@ body {
   padding: 8px;
   border-radius: 50%;
 }
+@media screen and (min-width: 310px) {
+  audio {
+    width: 60%;
+  }
+  img.imgp {
+    width: 86%;
+  }
+}
+@media screen and (min-width: 968px) {
+  section {
+    font: normal normal 20px arial, helvetica,
+    sans-serif;
+  }
+  section#audio {
+    width: 560px;
+    margin: 20px 0 10px 1.6%;
+    height: 455px;
+    padding: 10px 10px -50px 10px;
+  }
+  #imagem {
+    margin: 25px 20px 20px 20px;
+  }
+  audio {
+    margin: 5;
+  }
+  ul {
+    line-height: 77px;
+  }
+  section#listas {
+    list-style-position: inside;
+    padding: 10px;
+    text-align: right;
+    margin: -465px 0 0 63.7%;
+    width: 35%;
+    height: 455px;
+  }
+  header {
+    font: normal bolder 1em arial, helvetica, sans-serif;
+  }
+}
