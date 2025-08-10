@@ -267,7 +267,7 @@ body {
     font: normal bolder 1em arial, helvetica, sans-serif;
   }
   .navtop {
-    display:;
+    display: none;
   }
   .navtop a {
     display: none;
