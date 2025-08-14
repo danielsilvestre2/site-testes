@@ -22,16 +22,14 @@
     <a href="#iframes">Iframes</a>
 </nav>
 <main>
-     <!-- Gradients -->
     <section id="gradient">
       <h1>Testes com Gradients</h1>
-      <p>Gradiente Linear</p>
+      <p>Gradiente Linear/Gradiente Radial</p>
         <div class="grad">•</div>
-      <p>Gradiente Radial</p>
         <div class="grad2">•</div>
     </section>
-    <!-- Botões -->
-    <section id="botoes">
+    <div class="separsec">
+      <section class="sec" id="botoes">
       <h1>Teste com Botoes</h1>
        <p>Botoes em Listas</p>
       <ul>
@@ -40,15 +38,14 @@
         <li><button>C</button></li>
       </ul>
     </section>
-    <!-- Fontes -->
-    <section id="fontes">
+    <section class="sec" id="fontes">
       <h1>Testes com Fontes</h1>
       <p class="font1">HandWritting</p>
       <p class="font2">Rick and Morty</p>
       <p class="font3">Jojo</p>
     </section>
     <!-- Inputs -->
-    <section id="form">
+    <section class="sec" id="form">
     <h1>Teste com Inputs</h1>
     <form method="post" action="sigin.php">
     <fieldset>
@@ -68,8 +65,42 @@
     </p>
     </fieldset>
     </form>
+    <form autocomplete="on" method="post" action="sigin.php">
+    <fieldset>
+    <legend>Telefone e Email</legend>
+    <p>
+    <label for="phone">Telefone: <br></label>
+    <input placeholder="(21) 98765-4321" required type="tel" name="tel" id="phone" pattern="\(\d{2}\)\s?(\d{4,5})-?(\d{4})">
+    </p>
+    <p>
+    <label for="email">Email: <br></label>
+    <input placeholder="Abc123@gmail.com" required type="email" name="email" id="email">
+    </p>
+    <pre>
+      <input type="submit" value="Enviar">
+    </pre>
+    </fieldset>
+    </form>
+    <form action="cadastro.php" method="post">
+    <fieldset class="none">
+    <legend>Checkbox and Radio</legend>
+    <p>
+    <span>Sexo: </span><br>
+    <input checked type="radio" name="sexo" id="mas"><label for="mas">Masculino</label>
+    <br>
+    <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label><br>
+    <label for="check">Linguagens Utilizadas </label> <br>
+    <input checked type="checkbox" name="checkbox" id="check">HTML
+    <input checked type="checkbox" name="checkbox" id="check">CSS
+    <input type="checkbox" name="checkbox" id="check">JAVASCRIPT
+    </p>
+    </fieldset>
+    </form>
+    <p>
+    <input type="submit" value="Enviar">
+    </p>
     </section>
-    <section id="form2">
+    <section class="sec2" id="form2">
     <h1>Outros Valores de Inputs</h1>
     <form action="sigin.php" method="post">
     <p>
@@ -131,44 +162,8 @@
       <label for="fdbk">Como Posso melhorar?</label> <br>
       <textarea name="feedback" id="fdbk" cols="30" rows="10" placeholder=" Insira aqui.. "></textarea>
     </p>
-    </section>
-    <section id="form3">
-    <fieldset class="none">
-      <legend>Checkbox and Radio</legend>
-      <p>
-      <span>Sexo: </span><br>
-      <input checked type="radio" name="sexo" id="mas"><label for="mas">Masculino</label>
-      <br>
-      <input type="radio" name="sexo"
-      id="fem"><label for="fem">Feminino</label><br>
-      <label for="check">Linguagens Utilizadas </label> <br>
-      <input checked type="checkbox" name="checkbox" id="check">HTML
-      <input checked type="checkbox" name="checkbox" id="check">CSS
-      <input type="checkbox" name="checkbox" id="check">JAVASCRIPT
-    </p>
-    </fieldset>
-    </form>
-    <form autocomplete="on" method="post" action="sigin.php">
-    <fieldset>
-    <legend>Telefone e Email</legend>
-    <p>
-    <label for="phone">Telefone: <br></label>
-    <input placeholder="(21) 98765-4321" required type="tel" name="tel" id="phone" pattern="\(\d{2}\)\s?(\d{4,5})-?(\d{4})">
-    </p>
-    <p>
-    <label for="email">Email: <br></label>
-    <input placeholder="Abc123@gmail.com" required type="email" name="email" id="email">
-    </p>
-    <pre>
-       <input type="submit" value="Enviar">
-    </pre>
-    </fieldset>
-    </form>
-    
-    <p>
-    <input type="submit" value="Enviar">
-    </p>
   </section>
+  </div>
 </main>
 <nav>  <!-- Menu de Navegação entre indexs -->
   <a class="goup" href="#start">^</a>

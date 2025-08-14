@@ -153,7 +153,7 @@ section button {
 section button:hover {
   border: 1px solid lightgray;
   background-color: lightgray;
-  color: gray;jI
+  color: gray;
   transition-duration: .2s;
 }
   /* Listas */
@@ -168,6 +168,7 @@ ul {
   text-align: center;
   align-items: center;
   margin: auto;
+  margin-bottom: 20px;
   justify-content: center;
   display: flex;
   padding: 10px;
@@ -182,6 +183,7 @@ ul {
   text-align: center;
   align-items: center;
   margin: auto;
+  margin-bottom: 20px;
   justify-content: center;
   display: flex;
   padding: 10px;
@@ -200,6 +202,12 @@ section, div, nav {
   box-shadow: 0 5px 10px #0000002a;
   background-color: white;
 }
+div {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+  }
   /* Rodape */
 footer {
   height: 100px;
@@ -260,35 +268,46 @@ footer a {
 }
 @media screen and (min-width: 889px) {
   header {
-    margin: 0 0 20px 0;
+    margin-bottom: 30px;
   }
   .navtop {
     display: none;
   }
-  .navtop a {
-    display: none;
+  #gradient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .3em;
+  }
+  .grad, .grad2 {
+    margin-bottom: 20px;
+    height: 15vh;
+    width: 80%;
+    display: inline-block;
+  }
+  div {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
   }
   #botoes {
-    width: 45.8%;
-  }
-  #fontes {
-    margin: -335px 0 -20px 48.9%;
-    width: 49.8%;
+    height: 93.4%;
   }
   #form {
-    height: 20vh;
-    width: 45.8%;
-    margin: 40px 20px 20px 20px;
-    padding: 40px 20px 20px 20px;
+    height: 90%;
+  }
+  .separsec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .1em;
+    place-items: center;
+  }
+  .sec {
+    flex-grow: 1;
+    width: 93%;
+    margin: 10px;
   }
   #form2 {
-    height: 70%;
-    width: 49.8%;
-    margin: -450px 0 0 48.9%;
-  }
-  #form3 {
-    width: 45.8%;
-    margin: -650px 725px 0 20px;
-    padding: 80px 20px -10px 20px;
+    width: 90%;
   }
 }
