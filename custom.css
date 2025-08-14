@@ -80,21 +80,14 @@ section, div, nav {
   box-shadow: 0 5px 10px #0000002a;
   background-color: white;
 }
-.iframebt {
-  font: normal bold 1em arial, helvetica, sans-serif;
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid #0033d3;
-  background-color: #0033d3;
-  color: white;
-  border-radius: 10px;
-  gap: 1em;
-}
+div {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
 section h1 {
   font: normal bold 2em arial, sans-serif;
-}
-#iframes p {
-  font: normal normal 1em arial, helvetica, sans-serif;
 }
   /* Listas com downloads */
 ul {
@@ -111,7 +104,6 @@ ul a:hover {
   text-decoration: underline;
 }
 li a::before {
-  content: "";
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -128,6 +120,10 @@ video, iframe {
   display: flex;
   align-items: center;
   border-radius: 20px;
+}
+}
+#iframes p {
+  font: normal normal 1em arial, helvetica, sans-serif;
 }
 aside {
   margin: 0 0 20px 0;
@@ -238,11 +234,14 @@ body {
     font: normal normal 17px arial, helvetica,
     sans-serif;
   }
-  section#audio {
-    width: 47%;
-    margin: 20px 0 10px 1.6%;
-    height: 455px;
-    padding: 10px 10px -50px 10px;
+  div {
+    box-shadow: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .separdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   #imagem {
     margin: 25px 20px 20px 20px;
@@ -250,17 +249,10 @@ body {
   audio {
     margin: 5;
   }
-  ul {
+  li {
+    font: normal normal 16px arial, helvetica,
+    sans-serif;
     line-height: 77px;
-  }
-  section#listas {
-    list-style-position: inside;
-    padding: 10px;
-    font-size: 13px;
-    text-align: right;
-    margin: -465px 0 0 51.5%;
-    width: 47%;
-    height: 455px;
   }
   header {
     margin: 0 0 20px 0;
