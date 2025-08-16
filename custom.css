@@ -247,6 +247,9 @@ body {
     margin: 30px;
     display: flex;
   }
+   #navtop a {
+    display: inline;
+  }
 }
 @media screen and (min-width: 968px) {
   section {
