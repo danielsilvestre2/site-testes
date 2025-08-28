@@ -85,10 +85,10 @@ section, div {
   background-color: white;
 }
 div {
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
   }
 section h1 {
   font: normal bold 2em arial, sans-serif;
@@ -183,7 +183,7 @@ body {
 }
   /* Alternar links */
 .gonext {
-  padding: 4px;
+  padding: -2px 0 0 0;
   position: absolute;
   left: 7%;
   border: 2px solid lightgray;
@@ -197,14 +197,14 @@ body {
   background-color: lightgray;
 }
 .gonext:hover {
-  transition-duration: .2s;
   border: 2px solid gray;
   background-color: gray;
   color: white;
+  transition-duration: .2s;
 }
 .goup {
   position: sticky;
-  bottom: 4%;
+  top: 0;
   left: 80%;
   text-align: center;
   display: inline-block;
@@ -215,7 +215,7 @@ body {
   border: 2px solid #7d8afe;
   background-color: #7d8afe;
   color: white;
-  padding: 8px;
+  padding: -2px;
   border-radius: 50%;
 }
 @media screen and (min-width: 310px) {
